@@ -5,7 +5,7 @@ Exercise: Multidimensional Arrays
 - __\*__ – a regular position on the field.
 - __e__ – the end of the route. 
 - __c__  - coal
-- __s__ - the place where the __miner starts__
+- __s__ - the place where the __miner starts__<br>
   Each time when the miner finds a coal, they collects it and __replace it with '\*'__. Keep track of the __count of the collected coals__. If the miner collects all of the coals in the field, the program stops and you have to print the following message: "__You collected all coals! ({rowIndex}, {colIndex})__".<br><br>
   If the miner __steps at 'e' the game is over (the program stops)__ and you have to print the following message: "__Game over! ({rowIndex}, {colIndex})__".<br><br>
   If there are no more commands and none of the above cases had happened, you have to print the following message: "__{remainingCoals} coals left. ({rowIndex}, {colIndex})__".
@@ -27,15 +27,5 @@ Exercise: Multidimensional Arrays
 Input|Output
 -----|------
 5<br>up right right up right<br>* * * c *<br>* * * e *<br>* * c * *<br>s * * c *<br>* * c * *|Game over! (1, 3)
-4<br>up right right right down<br>* * * e<br>
-* * c *
-* s * c
-* * * *	You collected all coals! (2, 3)
-6
-left left down right up left left down down down
-* * * * * *
-e * * * c *
-* * c s * *
-* * * * * *
-c * * * c *
-* * c * * *	3	coals left. (5, 0)
+4<br>up right right right down<br>* * * e<br>* * c *<br>* s * c<br>* * * *|You collected all coals! (2, 3)
+6<br>left left down right up left left down down down<br>* * * * * *<br>e * * * c *<br>* * c s * *<br>* * * * * *<br>c * * * c *<br>* * c * * *|3	coals left. (5, 0)
